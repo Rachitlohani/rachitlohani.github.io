@@ -3,9 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rachit Lohani — GCP Cheat Sheet & Developer Reference</title>
-  <meta name="description" content="Personal developer hub and interactive GCP gcloud CLI cheat sheet tailored for Cloud Run, Cloud Build, Cloud SQL, Compute, and GCS.">
   
+  <!-- Primary SEO Metadata -->
+  <title>Rachit Lohani — Cloud & Systems Engineer | Developer Hub & GCP Reference</title>
+  <meta name="description" content="Official website of Rachit Lohani — Cloud & Systems Engineer. Interactive GCP gcloud CLI cheat sheet, serverless architecture patterns, and developer resources.">
+  <meta name="keywords" content="Rachit Lohani, Rachit, Lohani, Cloud Engineer, Systems Engineer, Google Cloud Platform, GCP Cheat Sheet, gcloud CLI, Cloud Run, Cloud Build, Cloud SQL, Developer Hub">
+  <meta name="author" content="Rachit Lohani">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://rachitlohani.com/">
+  
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.svg">
+  
+  <!-- LLM & AI Agent Discovery -->
+  <link rel="alternate" type="text/plain" href="https://rachitlohani.com/llms.txt" title="LLM Manifest for AI Agents">
+  
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:site_name" content="Rachit Lohani">
+  <meta property="og:title" content="Rachit Lohani — Cloud & Systems Engineer">
+  <meta property="og:description" content="Official website of Rachit Lohani — Cloud & Systems Engineer. Explore interactive GCP CLI cheat sheets, cloud architecture, and developer resources.">
+  <meta property="og:url" content="https://rachitlohani.com/">
+  <meta property="og:type" content="profile">
+  <meta property="og:profile:first_name" content="Rachit">
+  <meta property="og:profile:last_name" content="Lohani">
+  <meta property="og:image" content="https://rachitlohani.com/favicon.svg">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rachit Lohani — Cloud & Systems Engineer">
+  <meta name="twitter:description" content="Official website of Rachit Lohani — Cloud & Systems Engineer. Explore interactive GCP CLI cheat sheets, cloud architecture, and developer resources.">
+  <meta name="twitter:creator" content="@rachitlohani">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +42,70 @@
   
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Schema.org JSON-LD Structured Data for Search Engine & AI Agent Indexing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://rachitlohani.com/#person",
+        "name": "Rachit Lohani",
+        "givenName": "Rachit",
+        "familyName": "Lohani",
+        "url": "https://rachitlohani.com/",
+        "jobTitle": "Cloud & Systems Engineer",
+        "description": "Rachit Lohani is a Cloud & Systems Engineer specializing in Google Cloud Platform (GCP), serverless systems architecture, DevOps, and AI agent frameworks.",
+        "sameAs": [
+          "https://github.com/Rachitlohani",
+          "https://linkedin.com/in/rachitlohani"
+        ],
+        "knowsAbout": [
+          "Google Cloud Platform",
+          "Cloud Architecture",
+          "Serverless Computing",
+          "Cloud Run",
+          "Cloud SQL",
+          "Cloud Build",
+          "gcloud CLI",
+          "DevOps & CI/CD",
+          "Distributed Systems",
+          "Software Engineering",
+          "AI Agent Architectures"
+        ],
+        "mainEntityOfPage": "https://rachitlohani.com/"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://rachitlohani.com/#website",
+        "url": "https://rachitlohani.com/",
+        "name": "Rachit Lohani",
+        "description": "Official website and GCP developer reference hub of Rachit Lohani.",
+        "publisher": {
+          "@id": "https://rachitlohani.com/#person"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://rachitlohani.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://rachitlohani.com/#webpage",
+        "url": "https://rachitlohani.com/",
+        "name": "Rachit Lohani — Cloud & Systems Engineer | Developer Hub",
+        "isPartOf": {
+          "@id": "https://rachitlohani.com/#website"
+        },
+        "about": {
+          "@id": "https://rachitlohani.com/#person"
+        }
+      }
+    ]
+  }
+  </script>
 
   <style>
     :root {
@@ -53,7 +146,7 @@
 
     /* Header & Branding */
     header {
-      background: rgba(13, 18, 38, 0.8);
+      background: rgba(13, 18, 38, 0.85);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--card-border);
@@ -81,8 +174,8 @@
     }
 
     .avatar {
-      width: 42px;
-      height: 42px;
+      width: 44px;
+      height: 44px;
       border-radius: 12px;
       background: linear-gradient(135deg, var(--accent-indigo), var(--accent-cyan));
       display: flex;
@@ -97,7 +190,7 @@
 
     .brand-title {
       font-family: 'Outfit', sans-serif;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 700;
       background: linear-gradient(90deg, #FFFFFF 0%, #E0E7FF 100%);
       -webkit-background-clip: text;
@@ -151,6 +244,172 @@
       max-width: 1200px;
       margin: 32px auto 0;
       padding: 0 24px;
+    }
+
+    /* Personal Profile & Achievements Hero Section */
+    .profile-hero {
+      background: rgba(17, 24, 39, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, rgba(6, 182, 212, 0) 70%);
+      pointer-events: none;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .profile-title-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .profile-avatar-lg {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--accent-indigo), var(--accent-cyan));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 24px;
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+    }
+
+    .profile-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.4px;
+      line-height: 1.2;
+    }
+
+    .profile-tagline {
+      font-size: 14px;
+      color: var(--accent-cyan);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .profile-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .profile-link {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 8px 14px;
+      color: var(--text-main);
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .profile-link:hover {
+      background: rgba(99, 102, 241, 0.2);
+      border-color: var(--accent-indigo);
+      color: #FFFFFF;
+      transform: translateY(-1px);
+    }
+
+    .profile-link.alt-link {
+      background: rgba(16, 185, 129, 0.1);
+      border-color: rgba(16, 185, 129, 0.3);
+      color: var(--accent-emerald);
+    }
+
+    .profile-link.alt-link:hover {
+      background: rgba(16, 185, 129, 0.25);
+      border-color: var(--accent-emerald);
+      color: #FFFFFF;
+    }
+
+    .profile-bio {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .achievement-card {
+      background: rgba(9, 13, 22, 0.6);
+      border: 1px solid var(--code-border);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: border-color 0.2s ease;
+    }
+
+    .achievement-card:hover {
+      border-color: rgba(99, 102, 241, 0.3);
+    }
+
+    .achievement-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .achievement-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 2px;
+    }
+
+    .achievement-desc {
+      font-size: 12px;
+      color: var(--text-dim);
+      line-height: 1.4;
     }
 
     /* Hero / Pill Navigation Section */
@@ -207,36 +466,6 @@
       color: #FFFFFF;
       border-color: transparent;
       box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
-    }
-
-    .pill .badge-count {
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 99px;
-      padding: 2px 7px;
-      font-size: 11px;
-      font-weight: 700;
-    }
-
-    /* Section Headers */
-    .section-title {
-      font-family: 'Outfit', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: #fff;
-    }
-
-    .section-icon {
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
     }
 
     /* Grid Layout */
@@ -343,7 +572,6 @@
     .code-block .cmd-root { color: #A7F3D0; font-weight: 600; }
     .code-block .cmd-flag { color: #F472B6; }
     .code-block .cmd-var { color: #FDE047; }
-    .code-block .cmd-comment { color: #6B7280; font-style: italic; }
 
     .copy-btn {
       position: absolute;
@@ -428,18 +656,18 @@
   <!-- Header Navigation -->
   <header>
     <div class="header-container">
-      <a href="#" class="brand">
+      <a href="https://rachitlohani.com/" class="brand" title="Rachit Lohani — Home">
         <div class="avatar">RL</div>
         <div>
-          <div class="brand-title">Rachit Lohani</div>
-          <div class="brand-subtitle">Cloud & Systems Engineering Reference</div>
+          <h1 class="brand-title">Rachit Lohani</h1>
+          <div class="brand-subtitle">Cloud & Systems Engineer</div>
         </div>
       </a>
 
       <!-- Search Input -->
       <div class="search-box">
         <i data-lucide="search" class="search-icon"></i>
-        <input type="text" id="searchInput" class="search-input" placeholder="Search gcloud commands, flags, topics... (e.g. 'run', 'build', 'sql')">
+        <input type="text" id="searchInput" class="search-input" aria-label="Search gcloud commands, flags, topics" placeholder="Search gcloud commands, flags, topics... (e.g. 'run', 'sql')">
       </div>
     </div>
   </header>
@@ -447,31 +675,92 @@
   <!-- Main Content -->
   <main class="container">
 
+    <!-- Profile & Key Achievements Hero Section (SEO & AI Agent Friendly) -->
+    <section class="profile-hero" aria-label="About Rachit Lohani">
+      <div class="profile-header">
+        <div class="profile-title-group">
+          <div class="profile-avatar-lg">RL</div>
+          <div>
+            <h2 class="profile-name">Rachit Lohani</h2>
+            <div class="profile-tagline">Cloud & Systems Engineer &middot; Infrastructure & AI Agent Architect</div>
+          </div>
+        </div>
+
+        <div class="profile-links">
+          <a href="https://github.com/Rachitlohani" target="_blank" rel="me me-github" class="profile-link" title="Rachit Lohani on GitHub">
+            <i data-lucide="github" style="width: 16px; height: 16px;"></i> GitHub
+          </a>
+          <a href="https://linkedin.com/in/rachitlohani" target="_blank" rel="me me-linkedin" class="profile-link" title="Rachit Lohani on LinkedIn">
+            <i data-lucide="linkedin" style="width: 16px; height: 16px;"></i> LinkedIn
+          </a>
+          <a href="/llms.txt" target="_blank" class="profile-link alt-link" title="LLM Agent Manifest">
+            <i data-lucide="bot" style="width: 16px; height: 16px;"></i> AI Agent Manifest (llms.txt)
+          </a>
+        </div>
+      </div>
+
+      <p class="profile-bio">
+        Engineering resilient cloud infrastructure, serverless systems, and AI agent architectures. Specializing in Google Cloud Platform (GCP), automated CI/CD pipelines, high-throughput database systems, and developer enablement tools.
+      </p>
+
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon tag-purple">
+            <i data-lucide="cloud-lightning" style="width: 18px; height: 18px;"></i>
+          </div>
+          <div>
+            <div class="achievement-title">Cloud Infrastructure</div>
+            <div class="achievement-desc">Production Cloud Run, Cloud SQL, and GCP multi-region architectures.</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon tag-cyan">
+            <i data-lucide="cpu" style="width: 18px; height: 18px;"></i>
+          </div>
+          <div>
+            <div class="achievement-title">AI & Agent Systems</div>
+            <div class="achievement-desc">Building autonomous LLM multi-agent tools & data pipeline agents.</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon tag-emerald">
+            <i data-lucide="code-2" style="width: 18px; height: 18px;"></i>
+          </div>
+          <div>
+            <div class="achievement-title">Developer Reference</div>
+            <div class="achievement-desc">Creator of interactive gcloud CLI cheat sheets & open-source tools.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Interactive Pill Navigation Bar -->
     <div class="nav-pills-wrapper">
       <div class="pills-label">
         <i data-lucide="layers" style="width: 14px; height: 14px;"></i> Active Topic Reference
       </div>
-      <div class="pills-container" id="pillsContainer">
-        <button class="pill active" data-category="gcp">
+      <div class="pills-container" id="pillsContainer" role="tablist">
+        <button class="pill active" data-category="gcp" role="tab" aria-selected="true">
           <i data-lucide="cloud" style="width: 15px; height: 15px;"></i> GCP Cheat Sheet
         </button>
-        <button class="pill" data-category="run">
+        <button class="pill" data-category="run" role="tab" aria-selected="false">
           <i data-lucide="box" style="width: 15px; height: 15px;"></i> Cloud Run
         </button>
-        <button class="pill" data-category="build">
+        <button class="pill" data-category="build" role="tab" aria-selected="false">
           <i data-lucide="hammer" style="width: 15px; height: 15px;"></i> Cloud Build
         </button>
-        <button class="pill" data-category="sql">
+        <button class="pill" data-category="sql" role="tab" aria-selected="false">
           <i data-lucide="database" style="width: 15px; height: 15px;"></i> Cloud SQL
         </button>
-        <button class="pill" data-category="compute">
+        <button class="pill" data-category="compute" role="tab" aria-selected="false">
           <i data-lucide="server" style="width: 15px; height: 15px;"></i> Compute Engine
         </button>
-        <button class="pill" data-category="storage">
+        <button class="pill" data-category="storage" role="tab" aria-selected="false">
           <i data-lucide="hard-drive" style="width: 15px; height: 15px;"></i> Storage & Artifacts
         </button>
-        <button class="pill" data-category="all">
+        <button class="pill" data-category="all" role="tab" aria-selected="false">
           <i data-lucide="layout-grid" style="width: 15px; height: 15px;"></i> All Reference
         </button>
       </div>
@@ -487,7 +776,7 @@
             <div class="section-icon tag-purple">
               <i data-lucide="sliders" style="width: 18px; height: 18px;"></i>
             </div>
-            <div class="card-title">1. Core Config & Context</div>
+            <h3 class="card-title">1. Core Config & Context</h3>
           </div>
           <span class="card-tag tag-purple">Config</span>
         </div>
@@ -495,18 +784,18 @@
           <div class="command-item">
             <div class="command-desc">View current project configuration & active account</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> config list</pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
           <div class="command-item">
             <div class="command-desc">Set active project ID & default region</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> config set project <span class="cmd-var">qubere-demo</span>
 <span class="cmd-root">gcloud</span> config set compute/region <span class="cmd-var">us-west1</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
           <div class="command-item">
             <div class="command-desc">Authenticate Application Default Credentials (ADC)</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> auth application-default login</pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
         </div>
       </div>
@@ -518,7 +807,7 @@
             <div class="section-icon tag-blue">
               <i data-lucide="box" style="width: 18px; height: 18px;"></i>
             </div>
-            <div class="card-title">2. Cloud Run Services & Jobs</div>
+            <h3 class="card-title">2. Cloud Run Services & Jobs</h3>
           </div>
           <span class="card-tag tag-blue">Serverless</span>
         </div>
@@ -526,7 +815,7 @@
           <div class="command-item">
             <div class="command-desc">List all running Cloud Run services</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> run services list <span class="cmd-flag">--region=us-west1</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
           <div class="command-item">
             <div class="command-desc">Deploy container to a Cloud Run service</div>
@@ -534,24 +823,24 @@
   <span class="cmd-flag">--image=us-west1-docker.pkg.dev/qubere-demo/cloud-run-source-deploy/qubere-demo-tms:latest</span> \
   <span class="cmd-flag">--region=us-west1</span> \
   <span class="cmd-flag">--service-account=qubere-app-runtime@qubere-demo.iam.gserviceaccount.com</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
           <div class="command-item">
             <div class="command-desc">Execute a Cloud Run Job on-demand</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> run jobs execute <span class="cmd-var">qubere-db-backup-demo</span> <span class="cmd-flag">--region=us-west1</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
         </div>
       </div>
 
-      <!-- 3. Cloud Build & Triggers -->
+      <!-- 3. Cloud Build & CI/CD -->
       <div class="card" data-category="gcp build">
         <div class="card-header">
           <div class="card-title-group">
             <div class="section-icon tag-emerald">
               <i data-lucide="hammer" style="width: 18px; height: 18px;"></i>
             </div>
-            <div class="card-title">3. Cloud Build & CI/CD</div>
+            <h3 class="card-title">3. Cloud Build & CI/CD</h3>
           </div>
           <span class="card-tag tag-emerald">Build Pipeline</span>
         </div>
@@ -559,18 +848,18 @@
           <div class="command-item">
             <div class="command-desc">List all automated build triggers</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> builds triggers list <span class="cmd-flag">--region=us-west1</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
           <div class="command-item">
             <div class="command-desc">Manually trigger a build execution</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> builds triggers run <span class="cmd-var">qubere-tms-demo</span> <span class="cmd-flag">--region=us-west1</span> <span class="cmd-flag">--branch=main</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
           <div class="command-item">
             <div class="command-desc">View recent build executions & stream logs</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> builds list <span class="cmd-flag">--region=us-west1</span> <span class="cmd-flag">--limit=10</span>
 <span class="cmd-root">gcloud</span> builds log <span class="cmd-var">&lt;BUILD_ID&gt;</span> <span class="cmd-flag">--region=us-west1</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
         </div>
       </div>
@@ -582,7 +871,7 @@
             <div class="section-icon tag-amber">
               <i data-lucide="database" style="width: 18px; height: 18px;"></i>
             </div>
-            <div class="card-title">4. Cloud SQL (Postgres)</div>
+            <h3 class="card-title">4. Cloud SQL (Postgres)</h3>
           </div>
           <span class="card-tag tag-amber">Database</span>
         </div>
@@ -590,17 +879,17 @@
           <div class="command-item">
             <div class="command-desc">List Cloud SQL instances & IP addresses</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> sql instances list</pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
           <div class="command-item">
             <div class="command-desc">Create an on-demand database backup</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> sql backups create <span class="cmd-flag">--instance=qubere-demo-instance</span> <span class="cmd-flag">--description="Pre-deploy backup"</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
           <div class="command-item">
             <div class="command-desc">Connect directly via Cloud SQL Proxy CLI</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> sql connect <span class="cmd-var">qubere-demo-instance</span> <span class="cmd-flag">--user=postgres</span> <span class="cmd-flag">--database=qubere_db</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
         </div>
       </div>
@@ -612,7 +901,7 @@
             <div class="section-icon tag-rose">
               <i data-lucide="server" style="width: 18px; height: 18px;"></i>
             </div>
-            <div class="card-title">5. Compute Engine (VMs)</div>
+            <h3 class="card-title">5. Compute Engine (VMs)</h3>
           </div>
           <span class="card-tag tag-rose">Virtual Machines</span>
         </div>
@@ -620,17 +909,17 @@
           <div class="command-item">
             <div class="command-desc">List all VM instances and running state</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> compute instances list</pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
           <div class="command-item">
             <div class="command-desc">Stop instance (halts compute billing)</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> compute instances stop <span class="cmd-var">delete-after-datadump</span> <span class="cmd-flag">--zone=us-west1-b</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
           <div class="command-item">
             <div class="command-desc">Delete VM instance permanently</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> compute instances delete <span class="cmd-var">delete-after-datadump</span> <span class="cmd-flag">--zone=us-west1-b</span> <span class="cmd-flag">--quiet</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
         </div>
       </div>
@@ -642,7 +931,7 @@
             <div class="section-icon tag-blue">
               <i data-lucide="hard-drive" style="width: 18px; height: 18px;"></i>
             </div>
-            <div class="card-title">6. Storage & Artifacts</div>
+            <h3 class="card-title">6. Storage & Artifacts</h3>
           </div>
           <span class="card-tag tag-blue">Assets & Registry</span>
         </div>
@@ -651,12 +940,12 @@
             <div class="command-desc">List GCS buckets & backup files</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> storage ls
 <span class="cmd-root">gcloud</span> storage ls <span class="cmd-flag">gs://qubere-demo-db-backups/</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
           <div class="command-item">
             <div class="command-desc">List Artifact Registry container images</div>
             <pre class="code-block"><span class="cmd-root">gcloud</span> artifacts docker images list <span class="cmd-flag">us-west1-docker.pkg.dev/qubere-demo/cloud-run-source-deploy</span></pre>
-            <button class="copy-btn" onclick="copyCode(this)"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
+            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code"><i data-lucide="copy" style="width: 12px; height: 12px;"></i> Copy</button>
           </div>
         </div>
       </div>
@@ -670,7 +959,7 @@
   </div>
 
   <footer>
-    <p>Rachit Lohani &copy; 2026 &middot; Hosted on GitHub Pages &middot; <a href="https://github.com/Rachitlohani/rachitlohani.github.io" target="_blank">Repository</a></p>
+    <p>Rachit Lohani &copy; 2026 &middot; <a href="https://rachitlohani.com">rachitlohani.com</a> &middot; <a href="https://github.com/Rachitlohani/rachitlohani.github.io" target="_blank" rel="noopener">GitHub Repository</a> &middot; <a href="/llms.txt">llms.txt</a></p>
   </footer>
 
   <script>
@@ -713,8 +1002,12 @@
 
     pills.forEach(pill => {
       pill.addEventListener('click', () => {
-        pills.forEach(p => p.classList.remove('active'));
+        pills.forEach(p => {
+          p.classList.remove('active');
+          p.setAttribute('aria-selected', 'false');
+        });
         pill.classList.add('active');
+        pill.setAttribute('aria-selected', 'true');
 
         const category = pill.getAttribute('data-category');
         filterCards(category, searchInput.value.toLowerCase());

@@ -1,0 +1,21 @@
+# Rachit Lohani — Cloud & Systems Engineer
+
+> Official portfolio, technical reference, and developer hub of Rachit Lohani.
+
+## About Rachit Lohani
+Rachit Lohani is a distinguished Cloud & Systems Engineer, software architect, and technical innovator specializing in Google Cloud Platform (GCP), high-scale serverless architectures, distributed systems, and AI agent frameworks.
+
+## Key Technical Achievements & Expertise
+- **Cloud Infrastructure & DevOps**: Extensive expertise in Google Cloud Platform (Cloud Run, Cloud Build, Cloud SQL PostgreSQL, Compute Engine, Artifact Registry, GCS), automated CI/CD pipelines, and zero-downtime deployment strategies.
+- **AI Agent & Multi-Agent Architecture**: Building autonomous AI systems, intelligent data transformation agents, and LLM-driven developer tooling.
+- **Developer Enablement & Tools**: Creator of interactive developer reference hubs, gcloud CLI cheat sheets, and production workflow utilities used by software engineering teams.
+- **Full-Stack Systems**: Proficient in TypeScript, Modern JavaScript, Node.js, Python, PostgreSQL, REST APIs, and responsive, high-performance web applications.
+
+## Featured Developer Tools & Resources
+- [GCP Developer Reference & Interactive Cheat Sheet](https://rachitlohani.com/#gcp): Production-ready gcloud CLI snippets for Cloud Run, Cloud Build, Cloud SQL, Compute Engine, and Storage.
+- [GitHub Profile](https://github.com/Rachitlohani): Open-source repositories, engineering contributions, and developer projects.
+
+## Social & Online Profiles
+- **Website**: https://rachitlohani.com
+- **GitHub**: https://github.com/Rachitlohani
+- **LinkedIn**: https://linkedin.com/in/rachitlohani

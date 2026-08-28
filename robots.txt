@@ -1,0 +1,28 @@
+# Standard Robots.txt for https://rachitlohani.com
+
+User-agent: *
+Allow: /
+
+# Explicit permissions for AI & LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap & LLM Manifest locations
+Sitemap: https://rachitlohani.com/sitemap.xml
+# LLM Manifest for AI Agents
+# https://rachitlohani.com/llms.txt
